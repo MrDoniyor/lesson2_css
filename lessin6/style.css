@@ -1,0 +1,53 @@
+body{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./background\ image.jpg);
+}
+
+/* video{
+    width: 60%;
+    /* filter: saturate(300%); asosan sariq va qizgiwlarni kopaytiradi */
+    /*defould 100%*/
+    /* filter: sepia();rasmni qadimgi sargiz tusda qiladi */
+    /* defoult 0% max 100% */
+    /* filter: grayscale();rasmni kulrang qilib beradi */
+    /* defoult 0 max 100% foiz qoyiw muhimmas */
+    /* filter: hue-rotate(deg); rasmlar diagrammasiga boyica ozgaradi */
+    /* defoult 0+360 */
+    /* filter: opacity(0.5);rasmning tiniqligi */
+    /* defoult 1 max 1 min 0 */
+    /* opacity  filter siz ham iwlatsa bolaveradi */
+    /* filter: drop-shadow(0px 0px 30px gray); */
+    /* soya qiliw ucun iwlatiladi  */
+    /* box shadow  bilan iwlatiladi ham farqi yo */
+    /* filter: invert(12); *//*rentgen filteri*/
+    /* defoult 0 max 100% 1ni ozida ham iwledi */
+    /* filter: contrast(); */ /*iwlatyotga rasmizni rangini toq lawtirib beradi (oq va qora)*/
+    /* defoult 100%  max 1000%*/
+    /* filter: blur(5px);  blur qilib beradi hiraroq  */
+    /* faqat px larlarda beriladi  */
+    /* defoult :0px max: cheksiz */
+    /* filter: brightness(200%);  *//*rasmni yoriqlawtiradi*/
+    /* defoult: 100%  max 10000%  */
+    /* filter: hue-rotate(deg720);
+    filter: sepia(50%);
+    filter: contrast(500%);
+     */
+     /* filter: sepia(1) contrast(5) grayscale(1) saturate(100%) hue-rotate(12deg); */
+
+.window{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.502);
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(6px) grayscale(1) brightness(150%); /*rasmni orqasiga filter qoyiw*/
+    background-image:url(https://www.transparenttextures.com/patterns/noisy.png);
+}

@@ -1,0 +1,132 @@
+
+/* body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 218px;
+    height: 360px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.4s;
+    background: linear-gradient(
+    209.21deg, rgb(211, 49, 137) 13.57%, rgb(94, 44, 141) 98.38%);
+}
+
+.card > img{
+    width: 90%;
+    transition: 0.4s;
+    margin-top: 20px;
+}
+
+.card:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+.card:hover > img{
+    transition: 0.4s;
+    width: 75%;
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    min-height: 45px;
+    min-width: 45px;
+    border-radius: 50%;
+    background-image: url(https://images.ctfassets.net/ooa29xqb8tix/3mI2kmh1xCWPalDCZcqdug/43b286cc9a9aa4f94f462ce6f0c14986/Profile_1.jpg?w=200&h=200&q=50?fm=jpg&q=50);
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    top: 60px;
+}
+ .avatar:hover{
+     width: 46px;
+     height: 46px;
+    transition: 0.4s;
+    transform: scale(1.1);
+ } */
+
+
+ /* *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth; */
+   /* scroll behavior smooth scrolllni sekin bowqaradi */
+ 
+
+ /* .nav{
+     width: 100%;
+     height: 100px;
+     background-color: indigo;
+     position: sticky;  
+     top: 0px;   /*top bilan left bermasa iwlamayadi*/
+     /* left: 0px; */ 
+     /*fixed bu elementni itta nuqtaga qadab qo'yadi*/
+    /* sticy bu fixedga oxwaydigon top va berish shart va kontent uni pastida chiqadi */
+    
+
+
+ /* h1{
+     padding-top: 100px;
+ } */
+
+ /* .top{
+     padding: 30px 40px;
+     border-radius: 50%;
+     color: #fff;
+     font-size: 22px;
+     background-color: purple;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+
+ } */
+
+ /* h1, h2 , h3 {
+     padding-top: 50px;
+ }
+
+ /* .box{
+     width: 100px;
+     height: 100px;
+     background-color: red;
+    position: absolute;
+     /* z index uni mavqeyini bildiradi */
+ 
+
+ /* p{
+     position: absolute;
+     top: 300px;
+     left: 400px;
+ } */ 
+/* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .container{
+     width: 500px;
+     height: 500px;
+     background-color: gold;
+     position: relative;   */
+     /* relative beriw kk div ichidagi elementlarga absolute berilganda */
+
+
+ /* .child{
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     position: absolute;
+ } */

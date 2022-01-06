@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-image: url(https://cdn.arstechnica.net/wp-content/uploads/2020/09/macOSBigSur.jpg);
+}
+
+.container{
+    width:1000px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.309);
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px rgb(17, 13, 13);
+    backdrop-filter: blur(5px);
+    display: flex;
+}
+
+.box1{
+    width: 270px;
+    height: 370px;
+    background-color: rgba(255, 0, 0, 0.755);
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+}
+
+.box2{
+    width: 600px;
+    height: 350px;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.container2{
+    margin-left: 20px;
+    width: 70%;
+    height: 400px;
+    /* background-color: blue; */
+}
+
+.text{
+    font-size: 15px;
+    padding-top: 0;
+    color: rgb(80, 75, 75);
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.title{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 170px;
+    margin-left: 65px;
+}
+
+.title1{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 55px;
+}
+
+.box1 > p{
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: 15px;
+    color: rgb(60, 55, 55);
+    font-family: sans-serif;
+}
+
+.number{
+    width: 20px;
+    height: 20px;
+    font-size: 19px;
+    background-color:  rgba(128, 128, 128, 0.583);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.number > p {
+    margin-left: 6px;
+}
+
+.box_message{
+    display: flex;
+}
+ .text3{
+     font-size: 15px;
+     margin-left: 7px;
+     font-family: sans-serif;
+ }
+
+ .clock{
+    width: 35px;
+    height: 20px;
+    font-size: 12px;
+    background-color: rgba(128, 128, 128, 0.583);
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-left: 25px;
+ }
+
+ .clock > p{
+    margin-top: 2px;
+    margin-left: 4px;
+ }
+
+ i{
+    font-size: 40px;
+    margin-top: 2px;
+    margin-left: 2px;
+    color: rgba(128, 128, 128, 0.583);
+ }
+
+ .icon{
+     width: 50px;
+     height: 50px;
+     background-color: rgb(43, 41, 41);
+     margin-left: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+ }

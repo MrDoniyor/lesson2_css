@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container{
+    width: 1200px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > div{
+    height: 360px;
+    min-width: 200px;
+    /* background-color: red; */
+    border-radius: 20px;
+}
+
+.box1{
+    height: 360px;
+    min-width: 200px;
+    background: linear-gradient(
+    209.21deg, rgb(211, 49, 137) 13.57%, rgb(94, 44, 141) 98.38%);
+}
+
+.image{
+    width: 178px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+

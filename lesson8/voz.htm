@@ -1,0 +1,125 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>UZPAYNET</title>
+<meta content="text/html; charset=UTF8" http-equiv="Content-Type"/>
+
+<OBJECT id="paynetcom" CLASSID="clsid:3A3E36E4-97E2-441E-BAA3-30ED2DF7B199" codebase="paynet.CAB#version=1,0,0,9" style="display: none"></OBJECT>
+
+<link rel="stylesheet" href="css/easyui/pepper-grinder/easyui.css" type="text/css"/>
+<link rel="stylesheet" href="css/easyui/icon.css" type="text/css"/>
+<link rel="stylesheet" href="css/easyui/common.css" type="text/css"/>
+<link rel="stylesheet" href="css/jquery.qtip.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/forms.css"/>
+<link rel="stylesheet" href="css/additional.css"/>
+<link rel="stylesheet" href="css/login.css"/>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js" onclick="window.location.href='js/jquery-1.11.2.min.js';return false;"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js" onclick="window.location.href='js/jquery.easyui.min.js';return false;"></script>
+<script type="text/javascript" src="js/jquery.qtip.min.js" onclick="window.location.href='js/jquery.qtip.min.js';return false;"></script>
+<script type="text/javascript" src="js/e-imzo.js" onclick="window.location.href='js/e-imzo.js';return false;"></script>
+
+<script id="uz-paynet-ui-SignIn-0">
+$(function () {
+set_active_button();
+});
+function searchKeyPress(e) {
+// look for window.event in case event isn't passed in
+e = e || window.event;
+if (e.keyCode == 13)
+{
+return false;
+}
+return true;
+}
+function set_active_button() {
+//Submit_td_id
+var chk_username_div_id = 0;
+var username_div_id = document.getElementById("username_div_id");
+chk_username_div_id = chk_username_div_id + username_div_id.getElementsByTagName("input")[0].value.length;
+var chk_password_div_id = 0;
+var password_div_id = document.getElementById("password_div_id");
+chk_password_div_id = chk_password_div_id + password_div_id.getElementsByTagName("input")[0].value.length;
+var chk_captcha_div_id = 0;
+var captcha_div_id = document.getElementById("captcha_div_id");
+chk_captcha_div_id = chk_captcha_div_id + captcha_div_id.getElementsByTagName("input")[0].value.length;
+//username_div_id password_div_id captcha_div_id
+if (chk_username_div_id > 0 && chk_password_div_id > 0 && chk_captcha_div_id > 0)
+{
+var Submit_td_id = document.getElementById("Submit_td_id");
+Submit_td_id.getElementsByTagName("input")[0].disabled = false;
+Submit_td_id.getElementsByTagName("input")[0].style.background = "#00c929";
+} else
+{
+var Submit_td_id = document.getElementById("Submit_td_id");
+Submit_td_id.getElementsByTagName("input")[0].disabled = true;
+Submit_td_id.getElementsByTagName("input")[0].style.background = "#e4e4e4";
+}
+}
+</script>
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+</head>
+<body>
+
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/forms.css"/>
+<link rel="stylesheet" href="css/additional.css"/>
+<link rel="stylesheet" href="css/login.css"/>
+<body id='enterPage'>
+<div style="text-align: center;">
+<div class='enter-block'>
+<a class='logo' href='#'></a>
+<div class='typical-forms enter-form'>
+<form enctype="multipart/form-data" action="signin/wicket:interface/:0:signInForm::IFormSubmitListener::/" id="id1" method="post"><div style="display:none"><input type="hidden" name="id1_hf_0" id="id1_hf_0" /></div>
+<div class='after-2 clearfix'>
+<h1 class='fleft'>Вход в персональный кабинет</h1>
+<div class='langs'>
+</div>
+</div>
+<span class="login-form-user-message">
+
+</span>
+<div style="margin-bottom: 10px !important;" id="username_div_id">
+<br/>
+<input onblur="var wcall=wicketAjaxPost('?x=-7oaf5mBI*Il2-7DyEAmBqVuD-sD3yzKE3-0gv98rlb10f7rtYZUGUyo*eL6dG4E', wicketSerialize(Wicket.$('id2')),null,null, function() {return Wicket.$('id2') != null;}.bind(this));" onkeyup="set_active_button();" name="username" onkeydown="return searchKeyPress(event);" id="id2" type="text" class="login-form-field" value="" onkeypress="set_active_button();"/>
+</div>
+<div class='after-2' id="password_div_id">
+<br/>
+<input onkeyup="set_active_button();" name="password" type="password" value="" class="login-form-field" onkeypress="set_active_button();"/>
+</div>
+<div class='after-2' id="captcha_div_id">
+<div style="display: ;" id="id3">
+<br/>
+<input onkeyup="set_active_button();" name="captchaTextContainer:captcha" id="id4" type="text" value="" class="captcha-field-input" onkeypress="set_active_button();"/>
+</div>
+<div style="display: ;" id="id5">
+<a id="id6" href="#" title="Нажмите для обновления кода" onclick="var wcall=wicketAjaxGet('?x=-7oaf5mBI*Il2-7DyEAmBgaXyuIT9J0RKhaKAz2BMbBFBIRW4OnfHCVpJFpwyRJ1hjicKQWRKuEMqqSwOXSPC5dg-EJMPhlk',null,null, function() {return Wicket.$('id6') != null;}.bind(this));return !wcall;">
+<img border="0" alt="Защитный код" id="id7" class="captcha-field-img" src="?x=-7oaf5mBI*Il2-7DyEAmBgaXyuIT9J0RKhaKAz2BMbBFBIRW4OnfHBhtkt7fn31bZvezgna6eLyO38D4GvDcGfCG08nbzU62QfkMlnwL2*8&wicket:antiCache=1639560344932"/></a>
+</div>
+<div style="display: none;" id="id8">
+<br/>
+<input name="ussdTextContainer:ussdcode" placeholder="USSD запрос: *171*3#{ВЫЗОВ}" id="id9" type="text" value="" class="login-form-field"/>
+</div>
+</div>
+<div class='after-2'>
+<table>
+<tr><td>
+<input type="button" value="Забыл пароль" class="login-form-submit-recovery" onclick="var win = this.ownerDocument.defaultView || this.ownerDocument.parentWindow; if (win == window) { window.location.href='?x=-7oaf5mBI*Il2-7DyEAmBnR9EbnbE2yvtBNAiVlHERKGIKR3CvmeRGAqjKVJIpU8Foq*VHsg*I0hfGqC-ZVG02Lgc-ophpKc3ZDlw7LdraM'; } ;return false"/>
+</td><td id="Submit_td_id"><input onclick="this.disabled = true;this.form.submit();" name="Submit" id="ida" type="submit" value="Войти" class="login-form-submit"/></td></tr>
+<tr> <td colspan="2"><center><a href="https://rouming.uz/ru/operators">Можете свободно выбрать оператора ЭСФ</a></center></td></tr>
+<tr> <td colspan="2"><center><a href="https://rouming.uz/uz/operators">EHF operatorini erkin tanlashingiz mumkin</a></center></td></tr>
+</table>
+</div>
+<span style="display:none;"></span>
+</form>
+<div class='version align-center'>
+Version 2.5.1#00
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</body>
+</html>
